@@ -19,3 +19,44 @@ h1 {
     margin-bottom: 15px;
     letter-spacing: 5px;
 }
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Images */
+
+.image-container {
+    margin: 10px 30%;
+
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Adaptable a tablets y smartphones */
+
+@media screen and (max-width: 600px) {
+	.image-container {
+        margin: 10px ;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+}
